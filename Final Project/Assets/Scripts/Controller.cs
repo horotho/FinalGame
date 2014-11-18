@@ -1,60 +1,82 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Controller : MonoBehaviour 
+public class Controller : MonoBehaviour
 {
 	private Animator anim;
 	private bool facingRight = true;
 	public float maxSpeed = 10f;
-	public float jumpForce;
-
 	private Vector3 originalPosition;
 	private SpriteRenderer spriteRenderer;
-
 	public Transform ground;
 	public LayerMask mask;
-	
 	public bool grounded;
+	public ChakraController currentController;
+	private ChakraController[] chakraControllers;
 
 	// Use this for initialization
-	void Start () 
+	void Start ()
 	{
-		anim = GetComponent<Animator>();
+		anim = GetComponent<Animator> ();
 		originalPosition = transform.position;
-		spriteRenderer = GetComponent<SpriteRenderer>();
+		spriteRenderer = GetComponent<SpriteRenderer> ();
+
+		chakraControllers = new ChakraController[4];
+		chakraControllers [0] = new FluxChakraController ();
+		chakraControllers [1] = new EtherChakraController ();
+		chakraControllers [2] = new VimChakraController ();
+		chakraControllers [3] = new HumanChakraController ();
+
+		currentController = chakraControllers [3];
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate() 
+	void FixedUpdate ()
 	{
-		float move = Input.GetAxis("Horizontal");
-		grounded = Physics2D.OverlapCircle(ground.transform.position, 0.25f, mask);
+		float move = Input.GetAxis ("Horizontal");
+		grounded = Physics2D.OverlapCircle (ground.transform.position, 0.4f, mask);
 
-		rigidbody2D.velocity = new Vector2(move * maxSpeed, rigidbody2D.velocity.y);
+		rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
 
-		if(move > 0 && !facingRight) Flip();
-		else if(move < 0 && facingRight) Flip();
+		if (move > 0 && !facingRight)
+			Flip ();
+		else if (move < 0 && facingRight)
+			Flip ();
 
-		anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
-		anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
-		anim.SetBool("Grounded", grounded);
+		anim.SetFloat ("Speed", Mathf.Abs (Input.GetAxis ("Horizontal")));
+		anim.SetFloat ("vSpeed", rigidbody2D.velocity.y);
+		anim.SetBool ("Grounded", grounded);
 	}
 
-	void Update()
+	void Update ()
 	{
-		if(grounded && Input.GetKeyDown(KeyCode.Space))
+		if (grounded && Input.GetKeyDown (KeyCode.Space))
 		{
-			rigidbody2D.AddForce(new Vector2(0, jumpForce));
+			currentController.OnJump (rigidbody2D);
 		}
 
-		if(Mathf.Abs(transform.position.y - originalPosition.y) > 100) transform.position = originalPosition;
+		if (Mathf.Abs (transform.position.y - originalPosition.y) > 100)
+			transform.position = originalPosition;
 
-		if(Input.GetKeyDown(KeyCode.Keypad1)) spriteRenderer.color = Color.red;
-		else if(Input.GetKeyDown(KeyCode.Keypad2)) spriteRenderer.color = Color.green;
-		else if(Input.GetKeyDown(KeyCode.Keypad3)) spriteRenderer.color = Color.blue;
+		if (Input.GetKeyDown (KeyCode.Keypad1))
+		{
+			currentController = chakraControllers[0];
+			currentController.OnStateChange(spriteRenderer);
+		}
+		else if (Input.GetKeyDown (KeyCode.Keypad2))
+		{
+			currentController = chakraControllers[1];
+			currentController.OnStateChange(spriteRenderer);
+		}
+		else if (Input.GetKeyDown (KeyCode.Keypad3))
+		{
+			currentController = chakraControllers[2];
+			currentController.OnStateChange(spriteRenderer);
+		}
+			
 	}
 
-	void Flip()
+	void Flip ()
 	{
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;

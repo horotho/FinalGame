@@ -1,18 +1,23 @@
 using UnityEngine;
 using System.Collections;
 
-public class FluxMovement : Movement
+public class FluxChakraController : ChakraController
 {
-	private float jumpForce = 1000f;
+	private float jumpForce = 200f;
 
-	public FluxMovement ()
+	public FluxChakraController ()
 	{
-
+		isActivated = false;
 	}
 
-	public override void OnJump(Rigidbody2D rigidbody)
+	public override void OnJump (Rigidbody2D rigidbody)
 	{
-		rigidbody.AddForce(new Vector2(0, jumpForce));
+		rigidbody.AddForce (new Vector2 (0, jumpForce));
+	}
+
+	public override void OnStateChange(SpriteRenderer renderer)
+	{
+		renderer.color = Color.blue;
 	}
 }
 
