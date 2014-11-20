@@ -58,17 +58,17 @@ public class Controller : MonoBehaviour
 		if (Mathf.Abs (transform.position.y - originalPosition.y) > 100)
 			transform.position = originalPosition;
 
-		if (Input.GetKeyDown (KeyCode.Keypad1))
+		if (Input.GetKeyDown (KeyCode.Alpha1))
 		{
 			currentController = chakraControllers[0];
 			currentController.OnStateChange(spriteRenderer);
 		}
-		else if (Input.GetKeyDown (KeyCode.Keypad2))
+		else if (Input.GetKeyDown (KeyCode.Alpha2))
 		{
 			currentController = chakraControllers[1];
 			currentController.OnStateChange(spriteRenderer);
 		}
-		else if (Input.GetKeyDown (KeyCode.Keypad3))
+		else if (Input.GetKeyDown (KeyCode.Alpha3))
 		{
 			currentController = chakraControllers[2];
 			currentController.OnStateChange(spriteRenderer);
