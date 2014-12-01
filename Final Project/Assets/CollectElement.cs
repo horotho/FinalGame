@@ -2,33 +2,28 @@
 using System.Collections;
 
 public class CollectElement : MonoBehaviour {
-
-
+	
 	public ParticleSystem system;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
 	void OnTriggerEnter2D(Collider2D col)
 	{
+		// Check if Player collides with the element.
 		if (col.gameObject.tag == "Player") {
 			Debug.Log ("Collected " + this.gameObject.name);
-			StartCoroutine( Wait() );
+
+			// Start the coroutine that Plays() and Stops() the particle system.
+			StartCoroutine( CollectionEmitter() );
+
+			// Deactivate renderer for the element before object is completely destroyed.
 			this.gameObject.renderer.enabled = false;
 		}
 	}
 
-	IEnumerator Wait() {
+	// Coroutine to start and stop the emitter, then destroy.
+	IEnumerator CollectionEmitter() {
 		system.Play ();
 		yield return new WaitForSeconds(.25f);
-		system.Stop (); 
+		system.Stop ();
 		Destroy(this.gameObject);
 	}
 }
