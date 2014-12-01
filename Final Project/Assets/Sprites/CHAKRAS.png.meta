@@ -76,7 +76,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_1
       rect:
@@ -86,7 +86,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_2
       rect:
@@ -96,7 +96,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_3
       rect:
@@ -106,7 +106,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_4
       rect:
@@ -116,7 +116,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_5
       rect:
@@ -126,7 +126,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_6
       rect:
@@ -156,7 +156,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_9
       rect:
@@ -166,7 +166,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_10
       rect:
@@ -176,7 +176,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_11
       rect:
@@ -186,7 +186,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_12
       rect:
@@ -196,7 +196,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_13
       rect:
@@ -206,7 +206,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_14
       rect:
@@ -236,7 +236,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_17
       rect:
@@ -246,7 +246,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_18
       rect:
@@ -256,7 +256,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_19
       rect:
@@ -266,7 +266,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_20
       rect:
@@ -276,7 +276,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_21
       rect:
@@ -286,7 +286,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_22
       rect:
@@ -296,7 +296,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: CHAKRAS_23
       rect:
@@ -306,7 +306,7 @@ TextureImporter:
         width: 950
         height: 950
       alignment: 1
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
