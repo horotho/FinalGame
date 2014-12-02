@@ -29,6 +29,13 @@ public class Controller : MonoBehaviour
 
 		currentController = chakraControllers [3];
 	}
+
+	void SetControllerActive(string elementName)
+	{
+		if(elementName == "flux") chakraControllers[0].isActivated = true;
+		else if (elementName == "vim") chakraControllers[2].isActivated = true;
+		else if (elementName == "ether") chakraControllers[1].isActivated = true;
+	}
 	
 	// Update is called once per frame
 	void FixedUpdate ()
@@ -58,17 +65,17 @@ public class Controller : MonoBehaviour
 		if (Mathf.Abs (transform.position.y - originalPosition.y) > 100)
 			transform.position = originalPosition;
 
-		if (Input.GetKeyDown (KeyCode.Keypad1))
+		if (Input.GetKeyDown (KeyCode.Alpha1) && chakraControllers[0].isActivated)
 		{
 			currentController = chakraControllers[0];
 			currentController.OnStateChange(spriteRenderer);
 		}
-		else if (Input.GetKeyDown (KeyCode.Keypad2))
+		else if (Input.GetKeyDown (KeyCode.Alpha2) && chakraControllers[1].isActivated)
 		{
 			currentController = chakraControllers[1];
 			currentController.OnStateChange(spriteRenderer);
 		}
-		else if (Input.GetKeyDown (KeyCode.Keypad3))
+		else if (Input.GetKeyDown (KeyCode.Alpha3)&& chakraControllers[2].isActivated)
 		{
 			currentController = chakraControllers[2];
 			currentController.OnStateChange(spriteRenderer);

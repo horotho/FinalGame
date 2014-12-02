@@ -7,7 +7,7 @@ public class VimChakraController : ChakraController
 	
 	public VimChakraController ()
 	{
-		isActivated = false;
+		this.isActivated = false;
 	}
 	
 	public override void OnJump (Rigidbody2D rigidbody)

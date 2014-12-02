@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Projects\Testing\Assets\InsideOuut.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\EtherChakraController.cs">
     <Files>
-      <File FileName="..\..\Projects\Testing\Assets\InsideOuut.cs" Line="28" Column="26" />
+      <File FileName="Assets\Scripts\EtherChakraController.cs" Line="6" Column="30" />
+      <File FileName="Assets\Scripts\Player.cs" Line="6" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -7,7 +7,7 @@ public class HumanChakraController : ChakraController
 	
 	public HumanChakraController ()
 	{
-		isActivated = true;
+		this.isActivated = true;
 	}
 	
 	public override void OnJump (Rigidbody2D rigidbody)

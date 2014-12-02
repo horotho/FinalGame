@@ -7,7 +7,7 @@ public class FluxChakraController : ChakraController
 
 	public FluxChakraController ()
 	{
-		isActivated = false;
+		this.isActivated = false;
 	}
 
 	public override void OnJump (Rigidbody2D rigidbody)
