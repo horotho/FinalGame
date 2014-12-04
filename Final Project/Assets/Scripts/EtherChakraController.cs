@@ -5,8 +5,9 @@ public class EtherChakraController : ChakraController
 {
 	private float jumpForce = 15f;
 	
-	public EtherChakraController (Rigidbody2D rb, SpriteRenderer rd) : base(rb, rd)
+	public EtherChakraController (GameObject gm) : base(gm)
 	{
+
 	}
 	
 	public override void Jump (bool isGrounded)
@@ -27,7 +28,7 @@ public class EtherChakraController : ChakraController
 	
 	public override void OnStateChange ()
 	{
-		renderer.color = Color.red;
+		spriteRenderer.color = Color.red;
 	}
 }
 

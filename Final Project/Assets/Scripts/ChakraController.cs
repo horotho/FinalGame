@@ -8,13 +8,15 @@ public abstract class ChakraController
 		set;
 	}
 
+	public GameObject gameObject;
+	public SpriteRenderer spriteRenderer;
 	public Rigidbody2D rigidbody2D;
-	public SpriteRenderer renderer;
 
-	protected ChakraController(Rigidbody2D rb, SpriteRenderer rd)
+	protected ChakraController(GameObject gameObject)
 	{
-		this.rigidbody2D = rb;
-		this.renderer = rd;
+		this.gameObject = gameObject;
+		this.spriteRenderer = (SpriteRenderer) gameObject.renderer;
+		this.rigidbody2D = gameObject.rigidbody2D;
 		isActivated = false;
 	}
 
