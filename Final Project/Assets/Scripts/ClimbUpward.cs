@@ -4,7 +4,8 @@ using System.Collections;
 public class ClimbUpward : MonoBehaviour {
 
 	private bool canClimb;
-	public float maxSpeed = 10f;
+	public GameObject player;
+	public float maxSpeed = 3f;
 
 	// Use this for initialization
 	void Start () {
@@ -13,24 +14,41 @@ public class ClimbUpward : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		float move = Input.GetAxis ("Vertical");
 		//Debug.Log (canClimb);
-		if (canClimb == true){
-			if ((Input.GetAxis ("Vertical") == 1) || (Input.GetAxis ("Vertical") == -1)) {
-				Debug.Log ("Player pressed button");
-				//rigidbody2D.velocity = new Vector2 (move * maxSpeed, rigidbody2D.velocity.y);
+		if (canClimb == true) {
+			// Deactivate gravity and create drag to simulate climbing.
+			Physics2D.gravity = new Vector3 (0, 0, 0);
+			player.rigidbody2D.drag = 5;
+
+			if (Input.GetKey (KeyCode.W)) {
+				//Debug.Log ("Player pressed W button");
+				player.rigidbody2D.velocity = new Vector2 (0, move * maxSpeed);
 			}
+			if (Input.GetKey (KeyCode.S)) {
+				//Debug.Log ("Player pressed S button");
+				player.rigidbody2D.velocity = new Vector2 (0, move * maxSpeed);
+			}
+		} else {
+			Physics2D.gravity = new Vector3 (0, -9.8f, 0);
+			player.rigidbody2D.drag = 0;
 		}
 	}
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
 
-		float move = Input.GetAxis ("Vertical");
-
-		// Check if Player collides with the element.
+		// Check if Player collides.
 		if (col.gameObject.tag == "Player") {
 			canClimb = true;
 			Debug.Log ("canClimb = true");
+		}
+	}
+
+	void OnTriggerExit2D (Collider2D col){
+		if (col.gameObject.tag == "Player") {
+			canClimb = false;
+			Debug.Log ("canClimb = false");
 		}
 	}
 }
