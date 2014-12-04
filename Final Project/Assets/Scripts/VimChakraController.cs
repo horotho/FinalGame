@@ -5,17 +5,27 @@ public class VimChakraController : ChakraController
 {
 	private float jumpForce = 100f;
 	
-	public VimChakraController ()
+	public VimChakraController (Rigidbody2D rb, SpriteRenderer rd) : base(rb, rd)
 	{
-		this.isActivated = false;
 	}
 	
-	public override void OnJump (Rigidbody2D rigidbody)
+	public override void Jump (bool isGrounded)
 	{
-		rigidbody.AddForce (new Vector2 (0, jumpForce));
+		if(isGrounded && Input.GetKeyDown(KeyCode.Space))
+			rigidbody2D.AddForce (new Vector2 (0, jumpForce));
 	}
-
-	public override void OnStateChange(SpriteRenderer renderer)
+	
+	public override void Ability ()
+	{
+		
+	}
+	
+	public override void Climb ()
+	{
+		
+	}
+	
+	public override void OnStateChange ()
 	{
 		renderer.color = Color.green;
 	}

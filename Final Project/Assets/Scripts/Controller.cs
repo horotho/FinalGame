@@ -22,10 +22,10 @@ public class Controller : MonoBehaviour
 		spriteRenderer = GetComponent<SpriteRenderer> ();
 
 		chakraControllers = new ChakraController[4];
-		chakraControllers [0] = new FluxChakraController ();
-		chakraControllers [1] = new EtherChakraController ();
-		chakraControllers [2] = new VimChakraController ();
-		chakraControllers [3] = new HumanChakraController ();
+		chakraControllers [0] = new FluxChakraController (rigidbody2D, spriteRenderer);
+		chakraControllers [1] = new EtherChakraController (rigidbody2D, spriteRenderer);
+		chakraControllers [2] = new VimChakraController (rigidbody2D, spriteRenderer);
+		chakraControllers [3] = new HumanChakraController (rigidbody2D, spriteRenderer);
 
 		currentController = chakraControllers [3];
 	}
@@ -57,10 +57,9 @@ public class Controller : MonoBehaviour
 
 	void Update ()
 	{
-		if (grounded && Input.GetKeyDown (KeyCode.Space))
-		{
-			currentController.OnJump (rigidbody2D);
-		}
+		Debug.Log("Vim:" + chakraControllers[2].isActivated + ", Ether:" + chakraControllers[1].isActivated + ", Flux:" + chakraControllers[0].isActivated);
+
+		currentController.Jump(grounded);
 
 		if (Mathf.Abs (transform.position.y - originalPosition.y) > 100)
 			transform.position = originalPosition;
@@ -68,17 +67,17 @@ public class Controller : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.Alpha1) && chakraControllers[0].isActivated)
 		{
 			currentController = chakraControllers[0];
-			currentController.OnStateChange(spriteRenderer);
+			currentController.OnStateChange();
 		}
 		else if (Input.GetKeyDown (KeyCode.Alpha2) && chakraControllers[1].isActivated)
 		{
 			currentController = chakraControllers[1];
-			currentController.OnStateChange(spriteRenderer);
+			currentController.OnStateChange();
 		}
 		else if (Input.GetKeyDown (KeyCode.Alpha3)&& chakraControllers[2].isActivated)
 		{
 			currentController = chakraControllers[2];
-			currentController.OnStateChange(spriteRenderer);
+			currentController.OnStateChange();
 		}
 			
 	}

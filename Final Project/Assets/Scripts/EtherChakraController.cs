@@ -3,22 +3,31 @@ using System.Collections;
 
 public class EtherChakraController : ChakraController
 {
-	private float jumpForce = 350f;
+	private float jumpForce = 15f;
 	
-	public EtherChakraController ()
+	public EtherChakraController (Rigidbody2D rb, SpriteRenderer rd) : base(rb, rd)
 	{
-		this.isActivated = false;
 	}
 	
-	public override void OnJump (Rigidbody2D rigidbody)
+	public override void Jump (bool isGrounded)
 	{
-		rigidbody.AddForce (new Vector2 (0, jumpForce));
-		rigidbody.gravityScale = 0.5f;
+		if(Input.GetKey(KeyCode.Space))
+			rigidbody2D.AddForce (new Vector2 (0, jumpForce));
 	}
-
-	public override void OnStateChange(SpriteRenderer renderer)
+	
+	public override void Ability ()
 	{
-		renderer.color = Color.red;	
+		
+	}
+	
+	public override void Climb ()
+	{
+		
+	}
+	
+	public override void OnStateChange ()
+	{
+		renderer.color = Color.red;
 	}
 }
 

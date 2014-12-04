@@ -5,19 +5,31 @@ public class HumanChakraController : ChakraController
 {
 	private float jumpForce = 100f;
 	
-	public HumanChakraController ()
+	public HumanChakraController (Rigidbody2D rb, SpriteRenderer rd) : base(rb, rd)
 	{
 		this.isActivated = true;
 	}
-	
-	public override void OnJump (Rigidbody2D rigidbody)
+
+	public override void Jump (bool isGrounded)
 	{
-		rigidbody.AddForce (new Vector2 (0, jumpForce));
+		if(isGrounded && Input.GetKeyDown(KeyCode.Space))
+			rigidbody2D.AddForce (new Vector2 (0, jumpForce));
 	}
 	
-	public override void OnStateChange(SpriteRenderer renderer)
+	public override void Ability ()
+	{
+
+	}
+	
+	public override void Climb ()
+	{
+
+	}
+	
+	public override void OnStateChange ()
 	{
 		renderer.color = Color.white;
 	}
+	
 }
 
