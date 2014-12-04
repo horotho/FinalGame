@@ -11,7 +11,7 @@ public class CollectElement : MonoBehaviour
 		// Check if Player collides with the element.
 		if (col.gameObject.tag == "Player") 
 		{
-			col.gameObject.BroadcastMessage("SetControllerActive", "ether");
+			col.gameObject.BroadcastMessage("SetControllerActive", gameObject.tag);
 			Debug.Log ("Collected " + this.gameObject.name);
 
 			// Start the coroutine that Plays() and Stops() the particle system.

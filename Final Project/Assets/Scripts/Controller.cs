@@ -32,9 +32,9 @@ public class Controller : MonoBehaviour
 
 	void SetControllerActive(string elementName)
 	{
-		if(elementName == "flux") chakraControllers[0].isActivated = true;
-		else if (elementName == "vim") chakraControllers[2].isActivated = true;
-		else if (elementName == "ether") chakraControllers[1].isActivated = true;
+		if(elementName == "FLUX") chakraControllers[0].isActivated = true;
+		else if (elementName == "VIM") chakraControllers[2].isActivated = true;
+		else if (elementName == "ETHER") chakraControllers[1].isActivated = true;
 	}
 	
 	// Update is called once per frame
