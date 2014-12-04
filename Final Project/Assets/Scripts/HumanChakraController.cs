@@ -5,7 +5,7 @@ public class HumanChakraController : ChakraController
 {
 	private float jumpForce = 100f;
 	
-	public HumanChakraController (Rigidbody2D rb, SpriteRenderer rd) : base(rb, rd)
+	public HumanChakraController (GameObject gm) : base(gm)
 	{
 		this.isActivated = true;
 	}
@@ -28,7 +28,7 @@ public class HumanChakraController : ChakraController
 	
 	public override void OnStateChange ()
 	{
-		renderer.color = Color.white;
+		spriteRenderer.color = Color.white;
 	}
 	
 }

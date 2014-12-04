@@ -5,7 +5,7 @@ public class VimChakraController : ChakraController
 {
 	private float jumpForce = 100f;
 	
-	public VimChakraController (Rigidbody2D rb, SpriteRenderer rd) : base(rb, rd)
+	public VimChakraController (GameObject gm) : base(gm)
 	{
 	}
 	
@@ -27,7 +27,7 @@ public class VimChakraController : ChakraController
 	
 	public override void OnStateChange ()
 	{
-		renderer.color = Color.green;
+		spriteRenderer.color = Color.green;
 	}
 }
 

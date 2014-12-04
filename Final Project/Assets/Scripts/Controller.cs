@@ -22,19 +22,22 @@ public class Controller : MonoBehaviour
 		spriteRenderer = GetComponent<SpriteRenderer> ();
 
 		chakraControllers = new ChakraController[4];
-		chakraControllers [0] = new FluxChakraController (rigidbody2D, spriteRenderer);
-		chakraControllers [1] = new EtherChakraController (rigidbody2D, spriteRenderer);
-		chakraControllers [2] = new VimChakraController (rigidbody2D, spriteRenderer);
-		chakraControllers [3] = new HumanChakraController (rigidbody2D, spriteRenderer);
+		chakraControllers [0] = new FluxChakraController (gameObject);
+		chakraControllers [1] = new EtherChakraController (gameObject);
+		chakraControllers [2] = new VimChakraController (gameObject);
+		chakraControllers [3] = new HumanChakraController (gameObject);
 
 		currentController = chakraControllers [3];
 	}
 
-	void SetControllerActive(string elementName)
+	void SetControllerActive (string elementName)
 	{
-		if(elementName == "FLUX") chakraControllers[0].isActivated = true;
-		else if (elementName == "VIM") chakraControllers[2].isActivated = true;
-		else if (elementName == "ETHER") chakraControllers[1].isActivated = true;
+		if (elementName == "FLUX")
+			chakraControllers [0].isActivated = true;
+		else if (elementName == "VIM")
+			chakraControllers [2].isActivated = true;
+		else if (elementName == "ETHER")
+			chakraControllers [1].isActivated = true;
 	}
 	
 	// Update is called once per frame
@@ -57,27 +60,26 @@ public class Controller : MonoBehaviour
 
 	void Update ()
 	{
-		Debug.Log("Vim:" + chakraControllers[2].isActivated + ", Ether:" + chakraControllers[1].isActivated + ", Flux:" + chakraControllers[0].isActivated);
+		//Debug.Log ("Vim:" + chakraControllers [2].isActivated + ", Ether:" + chakraControllers [1].isActivated + ", Flux:" + chakraControllers [0].isActivated);
 
-		currentController.Jump(grounded);
+		currentController.Jump (grounded);
+		currentController.Ability();
 
 		if (Mathf.Abs (transform.position.y - originalPosition.y) > 100)
 			transform.position = originalPosition;
 
-		if (Input.GetKeyDown (KeyCode.Alpha1) && chakraControllers[0].isActivated)
+		if (Input.GetKeyDown (KeyCode.Alpha1) && chakraControllers [0].isActivated) 
 		{
-			currentController = chakraControllers[0];
-			currentController.OnStateChange();
-		}
-		else if (Input.GetKeyDown (KeyCode.Alpha2) && chakraControllers[1].isActivated)
+			currentController = chakraControllers [0];
+			currentController.OnStateChange ();
+		} else if (Input.GetKeyDown (KeyCode.Alpha2) && chakraControllers [1].isActivated) 
 		{
-			currentController = chakraControllers[1];
-			currentController.OnStateChange();
-		}
-		else if (Input.GetKeyDown (KeyCode.Alpha3)&& chakraControllers[2].isActivated)
+			currentController = chakraControllers [1];
+			currentController.OnStateChange ();
+		} else if (Input.GetKeyDown (KeyCode.Alpha3) && chakraControllers [2].isActivated) 
 		{
-			currentController = chakraControllers[2];
-			currentController.OnStateChange();
+			currentController = chakraControllers [2];
+			currentController.OnStateChange ();
 		}
 			
 	}
