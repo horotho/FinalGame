@@ -3,28 +3,45 @@ using System.Collections;
 
 public abstract class ChakraController
 {
-	public bool isActivated {
-		get;
-		set;
-	}
+    public bool isActivated
+    {
+        get;
+        set;
+    }
 
-	public GameObject gameObject;
-	public SpriteRenderer spriteRenderer;
-	public Rigidbody2D rigidbody2D;
+    public enum Chakras : int { VIM, ETHER, FLUX, HUMAN };
 
-	protected ChakraController(GameObject gameObject)
-	{
-		this.gameObject = gameObject;
-		this.spriteRenderer = (SpriteRenderer) gameObject.renderer;
-		this.rigidbody2D = gameObject.rigidbody2D;
-		isActivated = false;
-	}
+    public GameObject gameObject;
+    public SpriteRenderer spriteRenderer;
+    public Rigidbody2D rigidbody2D;
+    public BoxCollider2D boxCollider2D;
+    public CircleCollider2D circleCollider2D;
+    public Animator animator;
+    public ParticleSystem particleSystem;
+    public bool isAbilityActive;
 
-	public abstract void Jump (bool isGrounded);
+    protected ChakraController(GameObject gameObject)
+    {
+        this.gameObject = gameObject;
+        this.spriteRenderer = (SpriteRenderer) gameObject.renderer;
+        this.rigidbody2D = gameObject.rigidbody2D;
+        this.boxCollider2D = gameObject.GetComponent<BoxCollider2D>();
+        this.circleCollider2D = gameObject.GetComponent<CircleCollider2D>();
+        this.animator = gameObject.GetComponent<Animator>();
+        this.particleSystem = gameObject.GetComponent<ParticleSystem>();
 
-	public abstract void Ability ();
+        isActivated = false;
+        isAbilityActive = false;
+    }
 
-	public abstract void Climb ();
+    public abstract void Jump(bool isGrounded);
 
-	public abstract void OnStateChange ();
+    public abstract void Ability(bool isGrounded);
+
+    public abstract void Climb();
+
+    public abstract void OnStateChangeEnter();
+
+    public abstract void OnStateChangeExit();
+
 }

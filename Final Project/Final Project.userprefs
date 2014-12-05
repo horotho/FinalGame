@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Controller.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Projects\First Game Design\Assets\Scripts\ScreenFade.cs">
     <Files>
-      <File FileName="Assets/Scripts/CollectElement.cs" Line="12" Column="39" />
-      <File FileName="Assets/Scripts/Controller.cs" Line="62" Column="33" />
-      <File FileName="Assets/Scripts/ClimbUpward.cs" Line="16" Column="5" />
+      <File FileName="..\..\Projects\First Game Design\Assets\Scripts\ScreenFade.cs" Line="12" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
