@@ -11,6 +11,7 @@ public abstract class ChakraController
 	public GameObject gameObject;
 	public SpriteRenderer spriteRenderer;
 	public Rigidbody2D rigidbody2D;
+	public bool abilityIsActive;
 
 	protected ChakraController(GameObject gameObject)
 	{
@@ -18,6 +19,7 @@ public abstract class ChakraController
 		this.spriteRenderer = (SpriteRenderer) gameObject.renderer;
 		this.rigidbody2D = gameObject.rigidbody2D;
 		isActivated = false;
+		abilityIsActive = false;
 	}
 
 	public abstract void Jump (bool isGrounded);

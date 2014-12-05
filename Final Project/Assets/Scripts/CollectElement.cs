@@ -11,6 +11,7 @@ public class CollectElement : MonoBehaviour
 		// Check if Player collides with the element.
 		if (col.gameObject.tag == "Player") 
 		{
+			// Set controller active when element is collected.
 			col.gameObject.BroadcastMessage("SetControllerActive", gameObject.tag);
 			Debug.Log ("Collected " + this.gameObject.name);
 

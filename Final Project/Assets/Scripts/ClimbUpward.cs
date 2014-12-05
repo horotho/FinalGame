@@ -44,8 +44,10 @@ public class ClimbUpward : MonoBehaviour
 	{
 		// Check when Player enters trigger.
 		if (col.gameObject.tag == "Player") {
-			canClimb = true;
-			//Debug.Log ("canClimb = true");
+			if (GameObject.Find ("SpawnLadderTrigger").GetComponent<SpawnLadder> ().canSpawn) {
+				canClimb = true;
+				//Debug.Log ("canClimb = true");
+			}
 		}
 	}
 

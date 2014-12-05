@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\FluxChakraController.cs" />
      <Compile Include="Assets\Scripts\HumanChakraController.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\SpawnLadder.cs" />
      <Compile Include="Assets\Scripts\VimChakraController.cs" />
      <None Include="Assets\Standard Assets\Projectors\Guidelines.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
