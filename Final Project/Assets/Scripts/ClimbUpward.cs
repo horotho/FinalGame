@@ -1,19 +1,22 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ClimbUpward : MonoBehaviour {
+public class ClimbUpward : MonoBehaviour 
+{
 
 	private bool canClimb;
 	public GameObject player;
 	public float maxSpeed = 3f;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		canClimb = false;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		float move = Input.GetAxis ("Vertical");
 		//Debug.Log (canClimb);
 		if (canClimb == true) {
@@ -29,7 +32,9 @@ public class ClimbUpward : MonoBehaviour {
 				//Debug.Log ("Player pressed S button");
 				player.rigidbody2D.velocity = new Vector2 (0, move * maxSpeed);
 			}
-		} else {
+		} 
+		else 
+		{
 			Physics2D.gravity = new Vector3 (0, -9.8f, 0);
 			player.rigidbody2D.drag = 0;
 		}
@@ -37,18 +42,19 @@ public class ClimbUpward : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D col)
 	{
-
-		// Check if Player collides.
+		// Check when Player enters trigger.
 		if (col.gameObject.tag == "Player") {
 			canClimb = true;
-			Debug.Log ("canClimb = true");
+			//Debug.Log ("canClimb = true");
 		}
 	}
 
-	void OnTriggerExit2D (Collider2D col){
+	void OnTriggerExit2D (Collider2D col)
+	{
+		// Check when Player exits trigger.
 		if (col.gameObject.tag == "Player") {
 			canClimb = false;
-			Debug.Log ("canClimb = false");
+			//Debug.Log ("canClimb = false");
 		}
 	}
 }
