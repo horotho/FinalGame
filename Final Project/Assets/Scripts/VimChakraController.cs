@@ -21,6 +21,7 @@ public class VimChakraController : ChakraController
 		if (Input.GetKeyDown (KeyCode.F)) {
 			isAbilityActive = true;
 
+
 		}
     }
 

@@ -25,16 +25,16 @@ public class ClimbUpward : MonoBehaviour
             Physics2D.gravity = new Vector3(0, 0, 0);
             player.rigidbody2D.drag = 5;
 
-            if(Input.GetKey(KeyCode.W))
+            if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S))
             {
                 //Debug.Log ("Player pressed W button");
                 player.rigidbody2D.velocity = new Vector2(0, move * maxSpeed);
             }
-            if(Input.GetKey(KeyCode.S))
+            /*if(Input.GetKey(KeyCode.S))
             {
                 //Debug.Log ("Player pressed S button");
                 player.rigidbody2D.velocity = new Vector2(0, move * maxSpeed);
-            }
+            }*/
         }
         else
         {
