@@ -4,7 +4,6 @@ using System.Collections;
 public class FluxChakraController : ChakraController
 {
     private float jumpForce = 200f;
-    private bool isLiquid;
     private Sprite originalSprite;
     private Vector2 originalSize;
     private float originalRadius;
@@ -12,7 +11,6 @@ public class FluxChakraController : ChakraController
     public FluxChakraController(GameObject gm)
         : base(gm)
     {
-        isLiquid = false;
         originalSprite = spriteRenderer.sprite;
         originalSize = boxCollider2D.size;
         originalRadius = circleCollider2D.radius;
@@ -30,9 +28,9 @@ public class FluxChakraController : ChakraController
         {
             Debug.Log("CHANGED LIQUID STATE");
 
-            isLiquid = !isLiquid;
+            isAbilityActive = !isAbilityActive;
 
-            if(isLiquid)
+            if(isAbilityActive)
             {
                 boxCollider2D.size = new Vector2(0.07f, 0.07f);
                 circleCollider2D.radius = 0;

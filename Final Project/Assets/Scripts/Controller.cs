@@ -37,7 +37,7 @@ public class Controller : MonoBehaviour
         currentController = chakraControllers[3];
     }
 
-    public void SetControllerActive(int index)
+    void SetControllerActive(int index)
     {
         chakraControllers[index].isActivated = true;
     }
