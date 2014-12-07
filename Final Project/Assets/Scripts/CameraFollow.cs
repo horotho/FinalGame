@@ -8,7 +8,7 @@ public class CameraFollow : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        camera.orthographicSize = 8;
+        camera.orthographicSize = 6;
     }
 
     // Update is called once per frame

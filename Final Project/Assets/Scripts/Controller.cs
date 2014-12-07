@@ -34,7 +34,7 @@ public class Controller : MonoBehaviour
         keyCodes[(int) ChakraController.Chakras.VIM] = KeyCode.Alpha3;
         keyCodes[(int) ChakraController.Chakras.HUMAN] = KeyCode.Alpha4;
 
-        currentController = chakraControllers[3];
+        currentController = chakraControllers[(int) ChakraController.Chakras.HUMAN];
     }
 
     void SetControllerActive(int index)
@@ -67,8 +67,6 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-        //Debug.Log ("Vim:" + chakraControllers [2].isActivated + ", Ether:" + chakraControllers [1].isActivated + ", Flux:" + chakraControllers [0].isActivated);
-
         currentController.Jump(grounded);
         currentController.Ability(grounded);
 

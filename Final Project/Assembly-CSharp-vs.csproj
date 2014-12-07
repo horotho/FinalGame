@@ -46,6 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\LibNoise\GradientNoiseBasis.cs" />
+     <Compile Include="Assets\LibNoise\IModule.cs" />
+     <Compile Include="Assets\LibNoise\Math.cs" />
+     <Compile Include="Assets\LibNoise\Perlin.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ChakraController.cs" />
      <Compile Include="Assets\Scripts\ClimbUpward1.cs" />
