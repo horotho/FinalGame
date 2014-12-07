@@ -4,12 +4,12 @@ using System.Collections;
 public class EnterDoor : MonoBehaviour
 {
 
-    static public int level = 0;
+    static public int level = 1;
 
     // Use this for initialization
     void Start()
     {
-
+		level++;
     }
 
     // Update is called once per frame
@@ -22,7 +22,6 @@ public class EnterDoor : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            level++;
             Debug.Log("Entered Door");
             Application.LoadLevel("Level " + level);
         }
