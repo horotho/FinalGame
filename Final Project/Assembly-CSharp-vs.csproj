@@ -46,6 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\LibNoise\GradientNoiseBasis.cs" />
+     <Compile Include="Assets\LibNoise\IModule.cs" />
+     <Compile Include="Assets\LibNoise\Math.cs" />
+     <Compile Include="Assets\LibNoise\Perlin.cs" />
      <Compile Include="Assets\Scripts\AnimatorController_UI.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\ChakraController.cs" />
@@ -59,6 +63,7 @@
      <Compile Include="Assets\Scripts\HUD.cs" />
      <Compile Include="Assets\Scripts\HumanChakraController.cs" />
      <Compile Include="Assets\Scripts\ScreenFade.cs" />
+     <Compile Include="Assets\Scripts\SpawnLadder.cs" />
      <Compile Include="Assets\Scripts\SpawnLadder1.cs" />
      <Compile Include="Assets\Scripts\SpawnLadder2.cs" />
      <Compile Include="Assets\Scripts\StartGame.cs" />
