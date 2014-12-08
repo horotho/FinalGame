@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HumanChakraController : ChakraController
 {
-    private float jumpForce = 100f;
+    private float jumpForce = 200f;
 
     public HumanChakraController(GameObject gm)
         : base(gm)
