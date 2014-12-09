@@ -13,7 +13,9 @@ public class StartGame : MonoBehaviour {
 
 	}
 
-	public void StartGamePlay(){
-		ScreenFade.Instance.Fade(1, 1);
+	public void StartGamePlay()
+	{
+		GameObject player = GameObject.FindGameObjectWithTag("Player");
+		ScreenFade.Instance.Fade(1, 1, player.GetComponent<Controller>());
 	}
 }

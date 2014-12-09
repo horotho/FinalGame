@@ -15,6 +15,8 @@ public class Controller : MonoBehaviour
     private ChakraController[] chakraControllers;
     private KeyCode[] keyCodes;
 
+	public bool movementAllowed {get; set;}
+
     // Use this for initialization
     void Start()
     {
@@ -35,6 +37,7 @@ public class Controller : MonoBehaviour
         keyCodes[(int) ChakraController.Chakras.HUMAN] = KeyCode.Alpha4;
 
         currentController = chakraControllers[(int) ChakraController.Chakras.HUMAN];
+		movementAllowed = true;
     }
 
     void SetControllerActive(int index)
@@ -47,21 +50,26 @@ public class Controller : MonoBehaviour
         return chakraControllers[index].isAbilityActive && chakraControllers[index] == currentController;
     }
 
+
     // Update is called once per frame
     void FixedUpdate()
     {
         float move = Input.GetAxis("Horizontal");
         grounded = Physics2D.OverlapCircle(ground.transform.position, 0.4f, mask);
 
-        rigidbody2D.velocity = new Vector2(move * maxSpeed, rigidbody2D.velocity.y);
-
-        if(move > 0 && !facingRight)
-            Flip();
-        else if(move < 0 && facingRight)
-            Flip();
-
-        anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
-        anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
+		if(movementAllowed)
+		{
+			rigidbody2D.velocity = new Vector2(move * maxSpeed, rigidbody2D.velocity.y);
+			
+			if(move > 0 && !facingRight)
+				Flip();
+			else if(move < 0 && facingRight)
+				Flip();
+			
+			anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+			anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
+		}
+        	
         anim.SetBool("Grounded", grounded);
     }
 

@@ -24,7 +24,7 @@ public class EnterDoor : MonoBehaviour
         {
             Debug.Log("Entered Door");
             //Application.LoadLevel("Level " + level);
-			ScreenFade.Instance.Fade(level, 1);
+			ScreenFade.Instance.Fade(level, 1, col.gameObject.GetComponent<Controller>());
         }
     }
 }
