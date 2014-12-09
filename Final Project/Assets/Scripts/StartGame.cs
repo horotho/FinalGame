@@ -10,11 +10,10 @@ public class StartGame : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		OnMouseDown ();
+
 	}
 
-	public void OnMouseDown(){
-		if(Input.GetMouseButtonDown(0))
-			Application.LoadLevel("Level 1");
+	public void StartGamePlay(){
+		ScreenFade.Instance.Fade(1, 1);
 	}
 }
