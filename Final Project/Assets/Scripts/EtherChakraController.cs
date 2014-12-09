@@ -34,7 +34,7 @@ public class EtherChakraController : ChakraController
 
     public override void OnStateChangeExit()
     {
-
+		spriteRenderer.color = Color.white;
     }
 }
 

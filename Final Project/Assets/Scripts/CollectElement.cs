@@ -26,7 +26,7 @@ public class CollectElement : MonoBehaviour
     IEnumerator CollectionEmitter()
     {
         system.Play();
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(1f);
         system.Stop();
         Destroy(this.gameObject);
     }
