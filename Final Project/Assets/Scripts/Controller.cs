@@ -31,9 +31,9 @@ public class Controller : MonoBehaviour
         chakraControllers[(int) ChakraController.Chakras.HUMAN] = new HumanChakraController(gameObject);
 
         keyCodes = new KeyCode[4];
-        keyCodes[(int) ChakraController.Chakras.FLUX] = KeyCode.Alpha3;
+        keyCodes[(int) ChakraController.Chakras.FLUX] = KeyCode.Alpha2;
         keyCodes[(int) ChakraController.Chakras.ETHER] = KeyCode.Alpha1;
-        keyCodes[(int) ChakraController.Chakras.VIM] = KeyCode.Alpha2;
+        keyCodes[(int) ChakraController.Chakras.VIM] = KeyCode.Alpha3;
         keyCodes[(int) ChakraController.Chakras.HUMAN] = KeyCode.Alpha4;
 
         currentController = chakraControllers[(int) ChakraController.Chakras.HUMAN];
