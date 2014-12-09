@@ -41,20 +41,20 @@ public class ScreenFade : MonoBehaviour
         float time = Time.time;
 
         //fade to black
-        while((amount = Time.time - time) < fadeTime)
+        while((amount = (Time.time - time)/fadeTime) < 1)
         {
             yield return null;
         }
 
-        yield return new WaitForSeconds(0.25f);
+        //yield return new WaitForSeconds(0.25f);
         Application.LoadLevel(level);
 
         time = Time.time;
         //fade from black
-        while((amount = fadeTime - (Time.time - time)) > 0f)
+        /*while((amount = fadeTime - (Time.time - time)) > 0f)
         {
             yield return null;
-        }
+        }*/
         Destroy(Instance.gameObject);
     }
 

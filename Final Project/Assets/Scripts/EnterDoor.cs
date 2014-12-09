@@ -23,7 +23,8 @@ public class EnterDoor : MonoBehaviour
         if(col.gameObject.tag == "Player")
         {
             Debug.Log("Entered Door");
-            Application.LoadLevel("Level " + level);
+            //Application.LoadLevel("Level " + level);
+			ScreenFade.Instance.Fade(level, 1);
         }
     }
 }

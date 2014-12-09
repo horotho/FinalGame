@@ -17,7 +17,8 @@ public class SpikeDeath : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D col){
 		if (col.gameObject.tag == "Player") {
-			Application.LoadLevel(Application.loadedLevel);
+			//Application.LoadLevel(Application.loadedLevel);
+			ScreenFade.Instance.Fade(Application.loadedLevel, .5f);
 		}
 	}
 }
