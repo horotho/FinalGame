@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2f653cde3b00a2a468c19c572a02e1ea
+guid: fd29e8eec2f6c49cf8ccb334a7373575
 TextureImporter:
   fileIDToRecycleName:
     21300000: rock
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cfc18ff892f639d41a3bf3a13b97cce8
+guid: 6dbda2edc4269483382ac322f9b849bc
 TextureImporter:
   fileIDToRecycleName:
     21300000: torch
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

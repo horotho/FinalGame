@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b6671841ad6961840a85f0c53a76b0fe
+guid: 2fa5a7b03ad184b92ba7e341cd185394
 TextureImporter:
   fileIDToRecycleName:
     21300000: sandHalf
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

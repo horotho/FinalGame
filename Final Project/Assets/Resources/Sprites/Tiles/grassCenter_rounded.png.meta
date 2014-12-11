@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f2ba70a8e9c0f4e4093755505bf0e26b
+guid: 004d3ebde630045a883fadad98566ba9
 TextureImporter:
   fileIDToRecycleName:
     21300000: grassCenter_rounded
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

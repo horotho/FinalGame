@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 50e3a405c1e058e49ac6ef5d403810b2
+guid: 7278342a8537d4f749f012c9f8f9ab90
 TextureImporter:
   fileIDToRecycleName:
     21300000: buttonRed_pressed
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

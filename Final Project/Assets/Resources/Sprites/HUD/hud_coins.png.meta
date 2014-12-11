@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ab321906861c3d741a1a3f53f306834d
+guid: d2f609d0e069f4634b2f21eb9fe964b0
 TextureImporter:
   fileIDToRecycleName:
     21300000: hud_coins
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

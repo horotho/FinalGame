@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8ce79e3ed5eb6be43a7497c43e7df967
+guid: 36f4b2c409cd3413bb124231c40f1571
 TextureImporter:
   fileIDToRecycleName:
     21300000: gemYellow
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

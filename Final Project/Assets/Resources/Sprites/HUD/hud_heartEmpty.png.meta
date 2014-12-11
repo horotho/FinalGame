@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4010e2366ddcd2241ac65cd110502f63
+guid: bba4e572f21c54b059ee9c53dd8cff1d
 TextureImporter:
   fileIDToRecycleName:
     21300000: hud_heartEmpty
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

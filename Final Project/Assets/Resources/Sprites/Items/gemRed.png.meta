@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9ebcf61020cddc4092ada6ec4cc573f
+guid: 412c54de2b9374205abfdb0974150abe
 TextureImporter:
   fileIDToRecycleName:
     21300000: gemRed
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

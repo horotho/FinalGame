@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eeabd1458305bfc4c85d9bb0f14aaf94
+guid: c80e036877f0d4e73b2516ca2049d574
 TextureImporter:
   fileIDToRecycleName:
     21300000: stoneLedgeLeft
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

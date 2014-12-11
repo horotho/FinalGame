@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1bbde859baa882c4eb6492f853af6321
+guid: 60300da53105342e291d0db0b08724ee
 TextureImporter:
   fileIDToRecycleName:
     21300000: sandHillLeft2
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

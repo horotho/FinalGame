@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e5fe3493a119e084e997cf42915586ad
+guid: 9f53df6739f6e42c2bfa49a4d38fafe4
 TextureImporter:
   fileIDToRecycleName:
     21300000: MainUIBackground2
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

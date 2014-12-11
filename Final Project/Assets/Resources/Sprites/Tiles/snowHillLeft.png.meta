@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ad4104e2f1756014aa56ddd655717c2d
+guid: 5782c42442f6b41bfb62d6fd8d075a8f
 TextureImporter:
   fileIDToRecycleName:
     21300000: snowHillLeft
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

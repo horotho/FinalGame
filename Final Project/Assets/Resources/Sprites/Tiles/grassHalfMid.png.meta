@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41ccd4d8c429690429185d32307b56a4
+guid: 39b38bf2ae1724f4b8be274bc3538e32
 TextureImporter:
   fileIDToRecycleName:
     21300000: grassHalfMid
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

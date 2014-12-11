@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d45334af121dfd14e8902be42e1a7c5b
+guid: 1b3d0aa2efbc340de99283a379590043
 TextureImporter:
   fileIDToRecycleName:
     21300000: fishSwim2
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

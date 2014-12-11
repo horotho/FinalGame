@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ebef7ca9a8e6079409bc69af2db21bae
+guid: 037344e0547d14f52baa0efcaad90d5a
 TextureImporter:
   fileIDToRecycleName:
     21300000: lock_green
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f84eaa7804995e042b1ac2d0cf51d7e0
+guid: 35c1fa2bbdee446e29d07e14f2f5190b
 TextureImporter:
   fileIDToRecycleName:
     21300000: snowMid
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

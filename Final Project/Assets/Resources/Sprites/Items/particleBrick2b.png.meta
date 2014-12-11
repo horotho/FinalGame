@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8125f6ef5421ef445af66a8ca33e3cd2
+guid: aad98eb24b17d47b5953de80fd30620b
 TextureImporter:
   fileIDToRecycleName:
     21300000: particleBrick2b
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
