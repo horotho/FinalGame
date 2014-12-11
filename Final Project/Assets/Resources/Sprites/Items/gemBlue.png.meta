@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51c8a33daf3a1ce4884345506df4f651
+guid: 622f18677884e4f04a0d499eb4af807f
 TextureImporter:
   fileIDToRecycleName:
     21300000: gemBlue
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

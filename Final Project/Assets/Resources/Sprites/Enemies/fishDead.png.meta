@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8c187bac39216134db91f8d7622e2b81
+guid: 4d205b41513434ab3b2202add455ea19
 TextureImporter:
   fileIDToRecycleName:
     21300000: fishDead
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

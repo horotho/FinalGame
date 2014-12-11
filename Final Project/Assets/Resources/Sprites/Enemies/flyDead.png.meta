@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c3feca71c38b1c4c959a80226871f06
+guid: 1e8959572a7fc49a7acee77bb16c4b08
 TextureImporter:
   fileIDToRecycleName:
     21300000: flyDead
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

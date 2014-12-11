@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 19fb66e0c5128e54b91419ea63f1552f
+guid: 42e23dfa3d26f42bcbeb2f0cc804d3c9
 TextureImporter:
   fileIDToRecycleName:
     21300000: stoneMid
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

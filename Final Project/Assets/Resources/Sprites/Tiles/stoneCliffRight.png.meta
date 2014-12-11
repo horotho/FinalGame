@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0bb7704648da8854298baeeeba25dc8e
+guid: 03dde1568742f4bb8a4215b811b93e5d
 TextureImporter:
   fileIDToRecycleName:
     21300000: stoneCliffRight
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

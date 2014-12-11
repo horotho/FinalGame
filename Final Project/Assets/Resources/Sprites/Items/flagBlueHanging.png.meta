@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7bc5e619c13d2c141815198ff5c513e2
+guid: bf9d5b0ea06a8421e9a9b2402357ed44
 TextureImporter:
   fileIDToRecycleName:
     21300000: flagBlueHanging
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

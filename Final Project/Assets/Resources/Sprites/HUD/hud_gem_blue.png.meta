@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6b91510dd7588204dbd917a7e326dcc6
+guid: 5057e89092926465d8e74d4b966bb3c9
 TextureImporter:
   fileIDToRecycleName:
     21300000: hud_gem_blue
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

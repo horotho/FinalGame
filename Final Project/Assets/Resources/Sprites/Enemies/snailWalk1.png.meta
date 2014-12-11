@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dd761879a47928745abb09bb7252a4be
+guid: 03b6ee33dd38c42d8a946e0f453d88d3
 TextureImporter:
   fileIDToRecycleName:
     21300000: snailWalk1
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

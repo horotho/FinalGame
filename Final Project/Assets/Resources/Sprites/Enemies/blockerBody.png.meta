@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9ae0c6b70bbf02348a7d908383d131e0
+guid: 32a225203d6f144d5a8895ecd75deff0
 TextureImporter:
   fileIDToRecycleName:
     21300000: blockerBody
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

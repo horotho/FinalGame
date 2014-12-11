@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 39452f3c7b6092441a0aa46df8972f85
+guid: 87eba8d1be1e94193928b9120e7a1f64
 TextureImporter:
   fileIDToRecycleName:
     21300000: p3_duck
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

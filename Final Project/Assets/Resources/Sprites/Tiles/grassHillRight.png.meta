@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5f138cccff77a43479f8870e1228477d
+guid: 31f010e4ef22a4f31a5c19dbd8b25e0e
 TextureImporter:
   fileIDToRecycleName:
     21300000: grassHillRight
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

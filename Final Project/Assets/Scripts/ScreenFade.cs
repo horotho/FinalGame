@@ -35,10 +35,16 @@ public class ScreenFade : MonoBehaviour
         Instance.StartCoroutine(Instance.performFade(toLevel, fadeTime, controller));
     }
 
+    //The static method we can call to set up the instance and perform the fade
+    public void Fade(int toLevel, float fadeTime)
+    {
+        Instance.StartCoroutine(Instance.performFade(toLevel, fadeTime, null));
+    }
+
     //The coroutine that performs the fade
     private IEnumerator performFade(int level, float fadeTime, Controller controller)
     {
-		controller.movementAllowed = false;
+		if(controller != null) controller.movementAllowed = false;
         float time = Time.time;
 
         //fade to black
@@ -57,7 +63,7 @@ public class ScreenFade : MonoBehaviour
             yield return null;
         }
 
-		controller.movementAllowed = true;
+        if(controller != null) controller.movementAllowed = true;
         Destroy(Instance.gameObject);
     }
 

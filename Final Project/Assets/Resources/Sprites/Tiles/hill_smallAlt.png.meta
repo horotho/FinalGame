@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 79d1752a5739b0a4dbd7bfde2fa9e83a
+guid: 3ceb0ca53ce684719bdd173472514f0b
 TextureImporter:
   fileIDToRecycleName:
     21300000: hill_smallAlt
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

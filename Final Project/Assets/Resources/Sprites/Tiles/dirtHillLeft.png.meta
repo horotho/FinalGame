@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cd32237e7ceed2242a753f671591c98e
+guid: 7282a3f88faf445a18e077a80e1c7cb9
 TextureImporter:
   fileIDToRecycleName:
     21300000: dirtHillLeft
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

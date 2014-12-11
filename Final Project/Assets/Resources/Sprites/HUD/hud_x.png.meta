@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: adebc9b1fdd5cf646839618943012304
+guid: 65938c6e27b404a06ab89cca6259c172
 TextureImporter:
   fileIDToRecycleName:
     21300000: hud_x
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 80a042c45e0ab8646984bdac16b1eb45
+guid: 1296909bc29e1402e99de4d6352206b6
 TextureImporter:
   fileIDToRecycleName:
     21300000: castleCenter_rounded
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
