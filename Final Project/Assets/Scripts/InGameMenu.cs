@@ -33,10 +33,7 @@ public class InGameMenu : MonoBehaviour
             {
                 menu.SetActive(false);
             }
-
             
         }
-
-
     }
 }
