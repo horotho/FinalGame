@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b8312a1dffa05c4289fc9816b594416
+guid: bdac17b52fdea4a8b97bf9fed5937c08
 TextureImporter:
   fileIDToRecycleName:
     21300000: rockHillRight
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

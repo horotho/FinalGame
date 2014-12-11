@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4fa92c53fed41c74c951de05027a17a9
+guid: cf43f269bc37a4731b8a3a28477cc272
 TextureImporter:
   fileIDToRecycleName:
     21300000: liquidLavaTop
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2b7c594d032dd5b419ba58a23a4fdb7a
+guid: 9ded70176e72844219f2910a6b9713e8
 TextureImporter:
   fileIDToRecycleName:
     21300000: sandCliffLeftAlt
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

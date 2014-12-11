@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 187e7769c52ef1843952e4463a4b11f9
+guid: 0f0116ac840cb4d60869bad90dcad540
 TextureImporter:
   fileIDToRecycleName:
     21300000: flagRed
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

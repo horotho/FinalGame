@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bb5a259599e88914a854666e73842390
+guid: 9b1a553753f3243eea53ff9a23316dae
 TextureImporter:
   fileIDToRecycleName:
     21300000: boxCoin_disabled
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

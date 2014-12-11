@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cf51dbfb0d623a544858aa6d58e56e77
+guid: 5f8e31f34c8354850ba1a382ffdfe24b
 TextureImporter:
   fileIDToRecycleName:
     21300000: pokerMad
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

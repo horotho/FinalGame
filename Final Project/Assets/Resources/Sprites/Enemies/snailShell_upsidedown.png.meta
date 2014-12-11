@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c8405592c51cb0a49977a1d87f2c9bc0
+guid: 1f75b029bc5fd47ca9847ad61f91a8b9
 TextureImporter:
   fileIDToRecycleName:
     21300000: snailShell_upsidedown
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

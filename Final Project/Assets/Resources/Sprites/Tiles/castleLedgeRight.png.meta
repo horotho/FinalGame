@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8361e5e794368834ab2abfab1d56fac2
+guid: b71cbdc5b9d5547729bc2d586f098ed9
 TextureImporter:
   fileIDToRecycleName:
     21300000: castleLedgeRight
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

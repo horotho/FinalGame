@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5998e626dcea4b4087135bccfdeda1c
+guid: c86a64ad22643435ba5fc88dd50dbeec
 TextureImporter:
   fileIDToRecycleName:
     21300000: snowHalfRight
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

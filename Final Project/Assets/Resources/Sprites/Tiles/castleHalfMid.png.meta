@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 672cda90a7b64e34291ec7502f3fae17
+guid: 6c2acf4a24cf44a87b0540dee54947ed
 TextureImporter:
   fileIDToRecycleName:
     21300000: castleHalfMid
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

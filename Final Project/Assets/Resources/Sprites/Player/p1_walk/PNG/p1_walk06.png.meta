@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e2772738086510478a91b1cc7819258
+guid: 942cb898717fb4fb183082cde490f739
 TextureImporter:
   fileIDToRecycleName:
     21300000: p1_walk06
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

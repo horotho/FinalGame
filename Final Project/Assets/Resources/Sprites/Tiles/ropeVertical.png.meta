@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d389c3db8c9eeef46a9d189f5f48c662
+guid: 68c9f450f791e47f48355e272edb8424
 TextureImporter:
   fileIDToRecycleName:
     21300000: ropeVertical
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

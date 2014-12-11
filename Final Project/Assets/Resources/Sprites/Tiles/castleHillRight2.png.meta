@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f8990dc61873f9347b5455ee670172f8
+guid: 550f13ec483d0416d967a0b1eff7735a
 TextureImporter:
   fileIDToRecycleName:
     21300000: castleHillRight2
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

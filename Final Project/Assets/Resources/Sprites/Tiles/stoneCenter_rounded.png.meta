@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 46d50cf6bb69b90408dc9f5f5e05ffdc
+guid: 8a61b719c95ee4cf98ed8a49c5785fdf
 TextureImporter:
   fileIDToRecycleName:
     21300000: stoneCenter_rounded
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 97e8a8074bfd9a84ca3914faa58dcd31
+guid: a8b822745d79443f1b2e279e5cf85b74
 TextureImporter:
   fileIDToRecycleName:
     21300000: plantPurple
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

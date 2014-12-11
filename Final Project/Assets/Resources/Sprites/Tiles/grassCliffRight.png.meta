@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9d1e289ab2422ea4081b19a56c389adc
+guid: 1f80b9a8049b849949e80add32ae3c23
 TextureImporter:
   fileIDToRecycleName:
     21300000: grassCliffRight
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

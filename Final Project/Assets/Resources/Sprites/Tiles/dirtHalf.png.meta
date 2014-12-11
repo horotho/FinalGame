@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f06d7322a187c424bbc149f894138233
+guid: 47fc25bd71f8a4555bd3a0693f7314d3
 TextureImporter:
   fileIDToRecycleName:
     21300000: dirtHalf
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

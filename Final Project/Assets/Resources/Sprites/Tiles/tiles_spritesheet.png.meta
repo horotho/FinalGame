@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 61028eb4354bc304abeec87ce2d4ef46
+guid: 1b03b6f92937649d5b0b50336a9b5a11
 TextureImporter:
   fileIDToRecycleName:
     21300000: tiles_spritesheet
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

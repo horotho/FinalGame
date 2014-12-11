@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4f9a44a299424b84ab539c279fc15ea8
+guid: a7b7264ec4d0042218a51cf11bd6087f
 TextureImporter:
   fileIDToRecycleName:
     21300000: liquidWater
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

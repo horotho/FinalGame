@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ff4aa2bc4c66858499467368eb8de58b
+guid: 01352cbd7d4eb4a33a0c5264c5d3ea4d
 TextureImporter:
   fileIDToRecycleName:
     21300000: boxExplosiveAlt
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

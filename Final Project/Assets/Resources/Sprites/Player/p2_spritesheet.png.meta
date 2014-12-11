@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f9dd7de274ce768468526f4fc407a069
+guid: a46860c5f2f9b452ea384b83efc1a402
 TextureImporter:
   fileIDToRecycleName:
     21300000: p2_spritesheet
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

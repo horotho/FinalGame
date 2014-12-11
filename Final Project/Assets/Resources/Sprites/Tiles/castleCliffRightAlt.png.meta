@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 69bde8308ff94e345a9823a7119fdc8d
+guid: 3b0eb57297de246b1a3b18b9fac81273
 TextureImporter:
   fileIDToRecycleName:
     21300000: castleCliffRightAlt
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
