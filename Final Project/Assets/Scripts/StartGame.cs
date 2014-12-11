@@ -32,4 +32,9 @@ public class StartGame : MonoBehaviour {
 		GameObject player = GameObject.FindGameObjectWithTag("Player");
 		ScreenFade.Instance.Fade(0, 1, player.GetComponent<Controller>());
 	}
+
+	public void Exit()
+	{
+		Application.Quit();
+	}
 }
