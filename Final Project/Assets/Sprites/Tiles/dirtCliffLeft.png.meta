@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9ad732b553fa6b14c9c1153e16e2dd54
+guid: b051aa2405b8c41e69c4b88a213bd2e2
 TextureImporter:
   fileIDToRecycleName:
     21300000: dirtCliffLeft
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8d85840b2b4876545a632f2e62ca36a5
+guid: 37dc2704ddc1c4ae78a0bfcc8067dfc6
 TextureImporter:
   fileIDToRecycleName:
     21300000: fenceBroken
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

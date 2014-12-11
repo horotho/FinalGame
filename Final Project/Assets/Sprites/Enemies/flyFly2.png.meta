@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 37037c8bc38f7d24198c6f87a17527c3
+guid: f3539d2eb08c04f99ad77fdec5e871e4
 TextureImporter:
   fileIDToRecycleName:
     21300000: flyFly2
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

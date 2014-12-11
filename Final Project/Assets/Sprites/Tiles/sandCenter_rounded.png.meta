@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c4258478cbbeb234f8be95f4b5c1a47c
+guid: e8e4f5bdd7d8848ffb6e315e1a17c8b6
 TextureImporter:
   fileIDToRecycleName:
     21300000: sandCenter_rounded
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

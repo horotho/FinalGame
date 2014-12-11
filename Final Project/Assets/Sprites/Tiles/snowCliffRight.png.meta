@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 843c2f357d6cc6145b4299adf567e43f
+guid: 2fec39091e33c4b899e292342d339e15
 TextureImporter:
   fileIDToRecycleName:
     21300000: snowCliffRight
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

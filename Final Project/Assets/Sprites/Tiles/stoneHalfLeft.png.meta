@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a4ef98e150456c143af9ef0a6b0501e6
+guid: 848159512ca62476ea21d77ab1bf3e67
 TextureImporter:
   fileIDToRecycleName:
     21300000: stoneHalfLeft
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f8a287a8862e6644e830d50641ef5da9
+guid: 9ecf0e3a164ad43fa96b3f80686e67f4
 TextureImporter:
   fileIDToRecycleName:
     21300000: ladder_mid
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

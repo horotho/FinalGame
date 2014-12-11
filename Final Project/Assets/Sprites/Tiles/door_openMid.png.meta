@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 56c4b027e0ae60b408ba5c359da1d17f
+guid: 51497e1577efa492890bfe25c54caeb7
 TextureImporter:
   fileIDToRecycleName:
     21300000: door_openMid
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

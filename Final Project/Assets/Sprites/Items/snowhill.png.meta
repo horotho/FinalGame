@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 517e08a4099ac8941af676261d009d50
+guid: cfb22a9c5839d466ea48a1b374adc931
 TextureImporter:
   fileIDToRecycleName:
     21300000: snowhill
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

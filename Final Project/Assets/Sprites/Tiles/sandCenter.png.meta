@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 70701264135be804ea2d211f92b67d89
+guid: 87d3d8bff65ed4e36bc12ac1d78c6a8b
 TextureImporter:
   fileIDToRecycleName:
     21300000: sandCenter
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

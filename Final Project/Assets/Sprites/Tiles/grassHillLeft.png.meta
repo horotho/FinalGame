@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2ebfce2ca7c24524691e16614df2fbe5
+guid: 494c06def402c4218bf01dcdce302f31
 TextureImporter:
   fileIDToRecycleName:
     21300000: grassHillLeft
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

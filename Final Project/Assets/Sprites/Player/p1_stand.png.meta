@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6927ae40c020e464e9979292a7598d9c
+guid: 40103e74ad43b4639846bbb0eea26a8c
 TextureImporter:
   fileIDToRecycleName:
     21300000: p1_stand
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50

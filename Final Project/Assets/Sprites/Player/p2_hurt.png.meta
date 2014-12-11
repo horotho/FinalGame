@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dad64ae561cdc7643852630612cb2fcb
+guid: 09e822a1aa22e4ab993e8c471b00c09f
 TextureImporter:
   fileIDToRecycleName:
     21300000: p2_hurt
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
