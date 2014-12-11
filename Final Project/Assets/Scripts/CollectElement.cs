@@ -5,6 +5,12 @@ public class CollectElement : MonoBehaviour
 {
     public ParticleSystem system;
     public string elementName;
+    private GameObject indicator;
+
+    void Start()
+    {
+        indicator = GameObject.FindGameObjectWithTag("Indicator");
+    }
 
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -12,6 +18,8 @@ public class CollectElement : MonoBehaviour
         if(col.gameObject.tag == "Player")
         {
             col.gameObject.BroadcastMessage("SetControllerActive", GetIndexFromTag(gameObject.tag));
+            indicator.BroadcastMessage("SetIndicatorActive", gameObject.tag);
+
             Debug.Log("Collected " + this.gameObject.name);
 
             // Start the coroutine that Plays() and Stops() the particle system.

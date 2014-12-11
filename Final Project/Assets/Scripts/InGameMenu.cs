@@ -12,6 +12,8 @@ public class InGameMenu : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        Text text = textGameObject.GetComponent<Text>();
+        text.text = "Level " + Application.loadedLevel;
         menu.SetActive(false);
         isMenuActive = false;
     }
@@ -27,16 +29,46 @@ public class InGameMenu : MonoBehaviour
             {
                 menu.SetActive(true);
                 Time.timeScale = 0;
-
             }
             else
             {
                 menu.SetActive(false);
             }
 
-            
         }
+    }
+
+    void FullAlpha(Image image)
+    {
+        Color c = image.color;
+        c.a = 1f;
+        image.color = c;
+    }
 
 
+    void SetIndicatorActive(string ind)
+    {
+        if(ind == "VIM") FullAlpha(vim);
+        else if(ind == "FLUX") FullAlpha(flux);
+        else if(ind == "ETHER") FullAlpha(ether);
+    }
+
+
+    public void Exit()
+    {
+        Time.timeScale = 1;
+        Application.Quit();
+    }
+
+    public void Restart()
+    {
+        Time.timeScale = 1;
+        ScreenFade.Instance.Fade(Application.loadedLevel, 0.1f);
+    }
+
+    public void MainMenu()
+    {
+        Time.timeScale = 1;
+        ScreenFade.Instance.Fade(0, 0.5f);
     }
 }
