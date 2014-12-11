@@ -5,11 +5,12 @@ public class CollectElement : MonoBehaviour
 {
     public ParticleSystem system;
     public string elementName;
+    private GameObject indicator;
     private InGameMenu menu;
 
     void Start()
     {
-        GameObject indicator = GameObject.FindGameObjectWithTag("Indicator");
+        indicator = GameObject.FindGameObjectWithTag("Indicator");
         menu = indicator.GetComponent<InGameMenu>();
     }
 
