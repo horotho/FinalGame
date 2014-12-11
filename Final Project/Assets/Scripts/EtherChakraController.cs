@@ -5,7 +5,7 @@ public class EtherChakraController : ChakraController
 {
     private float jumpForce = 15f;
     private GameObject prefabParticle, instParticle;
-    private bool isAirborne;
+    private bool isAirborne, canJump;
 
     public EtherChakraController(GameObject gm)
         : base(gm)
@@ -13,12 +13,16 @@ public class EtherChakraController : ChakraController
         prefabParticle = Resources.Load<GameObject>("Prefabs/etherParticle");
         instParticle = (GameObject) MonoBehaviour.Instantiate(prefabParticle, gameObject.transform.position, Quaternion.identity);
         instParticle.particleSystem.Stop();
+        canJump = true;
+        isAirborne = false;
     }
 
     public override void Jump(bool isGrounded)
     {
-        if(Input.GetKey(KeyCode.Space))
+        if(Input.GetKey(KeyCode.Space) && canJump)
             rigidbody2D.AddForce(new Vector2(0, jumpForce));
+
+        canJump = !canJump;
     }
 
     public override void Ability(bool isGrounded)
@@ -51,7 +55,8 @@ public class EtherChakraController : ChakraController
     {
 		spriteRenderer.color = Color.white;
         particleSystem.Play();
-
+        instParticle.particleSystem.Stop();
+        isAirborne = false;
     }
 }
 
