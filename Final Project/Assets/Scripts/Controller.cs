@@ -3,16 +3,16 @@ using System.Collections;
 
 public class Controller : MonoBehaviour
 {
+	public Transform ground;
+	public LayerMask mask;
+	public bool grounded;
+	public float maxSpeed = 10f;
+
     private Animator anim;
     private bool facingRight = true;
-    public float maxSpeed = 10f;
     private Vector3 originalPosition;
-    private SpriteRenderer spriteRenderer;
-    public Transform ground;
-    public LayerMask mask;
-    public bool grounded;
-    public ChakraController currentController;
     private ChakraController[] chakraControllers;
+	private ChakraController currentController;
     private KeyCode[] keyCodes;
 
 	public bool movementAllowed {get; set;}
@@ -22,7 +22,6 @@ public class Controller : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         originalPosition = transform.position;
-        spriteRenderer = GetComponent<SpriteRenderer>();
 
         chakraControllers = new ChakraController[4];
         chakraControllers[(int) ChakraController.Chakras.FLUX] = new FluxChakraController(gameObject);
@@ -38,6 +37,7 @@ public class Controller : MonoBehaviour
 
         currentController = chakraControllers[(int) ChakraController.Chakras.HUMAN];
 		movementAllowed = true;
+		grounded = true;
     }
 
     void SetControllerActive(int index)

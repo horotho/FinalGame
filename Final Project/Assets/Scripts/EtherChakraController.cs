@@ -22,11 +22,6 @@ public class EtherChakraController : ChakraController
 
     }
 
-    public override void Climb()
-    {
-
-    }
-
     public override void OnStateChangeEnter()
     {
         spriteRenderer.color = Color.red;

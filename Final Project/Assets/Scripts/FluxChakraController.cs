@@ -7,6 +7,8 @@ public class FluxChakraController : ChakraController
     private Sprite originalSprite;
     private Vector2 originalSize;
     private float originalRadius;
+	private GameObject waterPrefab;
+	private GameObject[] prefabs;
 
     public FluxChakraController(GameObject gm)
         : base(gm)
@@ -17,7 +19,12 @@ public class FluxChakraController : ChakraController
         originalSprite = spriteRenderer.sprite;
         originalSize = boxCollider2D.size;
         originalRadius = circleCollider2D.radius;
-    }
+
+		waterPrefab = Resources.Load<GameObject>("Prefabs/fluxWater");
+		Debug.Log("Instantiation of water prefab " + (waterPrefab != null));
+
+		prefabs = new GameObject[100];
+	}
 
     public override void Jump(bool isGrounded)
     {
@@ -30,19 +37,19 @@ public class FluxChakraController : ChakraController
 
         if(isAbilityActive)
         {
-            ParticleSystem.Particle[] particles = new ParticleSystem.Particle[particleSystem.particleCount];
-            particleSystem.GetParticles(particles);
-            float percent;
-            ParticleSystem.Particle p;
-
-            for(int i = 0; i < particles.Length; i++)
-            {
-                p = particles[i];
-                percent = (p.lifetime - p.startLifetime)/(p.lifetime + p.startLifetime);
-                particles[i].velocity = new Vector3(Random.value, Mathf.Cos((float) (2 * Mathf.PI * Time.time)), 0);
-            }
-
-            particleSystem.SetParticles(particles, particles.Length);
+//            ParticleSystem.Particle[] particles = new ParticleSystem.Particle[particleSystem.particleCount];
+//            particleSystem.GetParticles(particles);
+//            float percent;
+//            ParticleSystem.Particle p;
+//
+//            for(int i = 0; i < particles.Length; i++)
+//            {
+//                p = particles[i];
+//                percent = (p.lifetime - p.startLifetime)/(p.lifetime + p.startLifetime);
+//                particles[i].velocity = new Vector3(Random.value, Mathf.Cos((float) (2 * Mathf.PI * Time.time)), 0);
+//            }
+//
+//            particleSystem.SetParticles(particles, particles.Length);
         }
 
         if(Input.GetKeyDown(KeyCode.F) && isGrounded)
@@ -53,26 +60,27 @@ public class FluxChakraController : ChakraController
 
             if(isAbilityActive)
             {
+				Vector3 pos = gameObject.transform.position;
+				for(int i = 0; i < prefabs.Length; i++)
+				{
+					GameObject prefab = (GameObject) MonoBehaviour.Instantiate(waterPrefab, pos + new Vector3(Random.Range(-0.5f, 0.5f), 0.5f,  0), Quaternion.identity);
+					SpringJoint2D joint = prefab.GetComponent<SpringJoint2D>();
+					joint.connectedBody = rigidbody2D;
+					prefabs[i] = prefab;
+				}
+
+				particleSystem.Stop();
+				rigidbody2D.mass = 10;
                 boxCollider2D.enabled = false;
-                circleCollider2D.center += new Vector2(-0.5f, -0.1f);
                 circleCollider2D.radius = 0.05f;
-                spriteRenderer.sprite = null;
+				spriteRenderer.sprite = null;
                 animator.enabled = false;
             }
             else
             {
-                boxCollider2D.enabled = true;
-                circleCollider2D.center -= new Vector2(-0.5f, -0.1f);
-                circleCollider2D.radius = originalRadius;
-                spriteRenderer.sprite = originalSprite;
-                animator.enabled = true;
+				OnStateChangeExit();
             }
         }
-
-    }
-
-    public override void Climb()
-    {
 
     }
 
@@ -83,10 +91,18 @@ public class FluxChakraController : ChakraController
 
     public override void OnStateChangeExit()
     {
-        boxCollider2D.size = originalSize;
-        circleCollider2D.radius = originalRadius;
-        spriteRenderer.sprite = originalSprite;
-        spriteRenderer.color = Color.white;
+		for(int i = 0; i < prefabs.Length; i++)
+		{
+			if(prefabs[i] != null) MonoBehaviour.Destroy(prefabs[i]);
+		}
+
+		particleSystem.Play();
+		rigidbody2D.mass = 1;
+		boxCollider2D.enabled = true;
+		circleCollider2D.radius = originalRadius;
+		spriteRenderer.sprite = originalSprite;
+		animator.enabled = true;
+		jumpForce = 200f;
     }
 
 }

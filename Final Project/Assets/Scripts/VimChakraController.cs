@@ -25,11 +25,6 @@ public class VimChakraController : ChakraController
 		}
     }
 
-    public override void Climb()
-    {
-
-    }
-
     public override void OnStateChangeEnter()
     {
         spriteRenderer.color = Color.green;

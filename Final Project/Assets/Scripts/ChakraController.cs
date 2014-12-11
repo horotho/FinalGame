@@ -3,12 +3,6 @@ using System.Collections;
 
 public abstract class ChakraController
 {
-    public bool isActivated
-    {
-        get;
-        set;
-    }
-	
     public enum Chakras : int { VIM, ETHER, FLUX, HUMAN };
 
     public GameObject gameObject;
@@ -19,6 +13,7 @@ public abstract class ChakraController
     public Animator animator;
     public ParticleSystem particleSystem;
     public bool isAbilityActive;
+	public bool isActivated;
 
     protected ChakraController(GameObject gameObject)
     {
@@ -37,8 +32,6 @@ public abstract class ChakraController
     public abstract void Jump(bool isGrounded);
 
     public abstract void Ability(bool isGrounded);
-
-    public abstract void Climb();
 
     public abstract void OnStateChangeEnter();
 
