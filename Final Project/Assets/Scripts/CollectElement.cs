@@ -5,11 +5,12 @@ public class CollectElement : MonoBehaviour
 {
     public ParticleSystem system;
     public string elementName;
-    private GameObject indicator;
+    private InGameMenu menu;
 
     void Start()
     {
-        indicator = GameObject.FindGameObjectWithTag("Indicator");
+        GameObject indicator = GameObject.FindGameObjectWithTag("Indicator");
+        menu = indicator.GetComponent<InGameMenu>();
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -18,7 +19,7 @@ public class CollectElement : MonoBehaviour
         if(col.gameObject.tag == "Player")
         {
             col.gameObject.BroadcastMessage("SetControllerActive", GetIndexFromTag(gameObject.tag));
-            indicator.BroadcastMessage("SetIndicatorActive", gameObject.tag);
+            menu.SetIndicatorActive(gameObject.tag);
 
             Debug.Log("Collected " + this.gameObject.name);
 

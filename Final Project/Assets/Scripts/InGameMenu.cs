@@ -13,7 +13,7 @@ public class InGameMenu : MonoBehaviour
     void Start()
     {
         Text text = textGameObject.GetComponent<Text>();
-        text.text = "Level " + Application.loadedLevel;
+        text.text = "Level " + (Application.loadedLevel - 1);
         menu.SetActive(false);
         isMenuActive = false;
     }
@@ -32,6 +32,7 @@ public class InGameMenu : MonoBehaviour
             }
             else
             {
+                Time.timeScale = 1;
                 menu.SetActive(false);
             }
 
@@ -46,8 +47,9 @@ public class InGameMenu : MonoBehaviour
     }
 
 
-    void SetIndicatorActive(string ind)
+    public void SetIndicatorActive(string ind)
     {
+        Debug.Log("TAG IS " + ind);
         if(ind == "VIM") FullAlpha(vim);
         else if(ind == "FLUX") FullAlpha(flux);
         else if(ind == "ETHER") FullAlpha(ether);
