@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 14b423a83961844b9b2ac4f32a3de94b
+guid: 64bcf372528c04dcfa688b887db0102e
 TextureImporter:
   fileIDToRecycleName:
     21300000: forest-background
@@ -26,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
