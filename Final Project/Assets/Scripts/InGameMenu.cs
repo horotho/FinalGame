@@ -6,12 +6,17 @@ public class InGameMenu : MonoBehaviour
 {
     public GameObject textGameObject;
     public Image flux, vim, ether;
+    public Image one, two, three;
     public GameObject menu;
     private bool isMenuActive;
+    private GameObject player;
+    private Controller playerController;
 
     // Use this for initialization
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerController = player.GetComponent<Controller>();
         Text text = textGameObject.GetComponent<Text>();
         text.text = "Level " + (Application.loadedLevel - 1);
         menu.SetActive(false);
@@ -35,7 +40,18 @@ public class InGameMenu : MonoBehaviour
                 Time.timeScale = 1;
                 menu.SetActive(false);
             }
+        }
 
+
+        if(isMenuActive)
+        {
+            for(int i = 0; i < 3; i++)
+            {
+                if(playerController.IsChakraAbilityActive(i))
+                {
+
+                }
+            }
         }
     }
 
@@ -49,10 +65,21 @@ public class InGameMenu : MonoBehaviour
 
     public void SetIndicatorActive(string ind)
     {
-        Debug.Log("Got " + ind);
-        if(ind == "VIM") FullAlpha(vim);
-        else if(ind == "FLUX") FullAlpha(flux);
-        else if(ind == "ETHER") FullAlpha(ether);
+        if(ind == "VIM")
+        {
+            FullAlpha(vim);
+            FullAlpha(three);
+        }
+        else if(ind == "FLUX")
+        {
+            FullAlpha(two);
+            FullAlpha(flux);
+        }
+        else if(ind == "ETHER")
+        {
+            FullAlpha(one);
+            FullAlpha(ether);
+        }
     }
 
 

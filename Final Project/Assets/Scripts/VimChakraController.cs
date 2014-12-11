@@ -28,6 +28,7 @@ public class VimChakraController : ChakraController
     public override void OnStateChangeEnter()
     {
         spriteRenderer.color = Color.green;
+        particleSystem.startColor = Color.green;
     }
 
     public override void OnStateChangeExit()
