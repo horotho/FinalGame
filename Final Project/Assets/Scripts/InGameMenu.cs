@@ -49,7 +49,7 @@ public class InGameMenu : MonoBehaviour
 
     public void SetIndicatorActive(string ind)
     {
-        Debug.Log("TAG IS " + ind);
+        Debug.Log("Got " + ind);
         if(ind == "VIM") FullAlpha(vim);
         else if(ind == "FLUX") FullAlpha(flux);
         else if(ind == "ETHER") FullAlpha(ether);
