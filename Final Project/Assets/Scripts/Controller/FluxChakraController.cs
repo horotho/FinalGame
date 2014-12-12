@@ -67,7 +67,7 @@ public class FluxChakraController : ChakraController
     {
         if(Input.GetKeyDown(KeyCode.F) && isGrounded)
         {
-            Debug.Log("CHANGED LIQUID STATE");
+            //Debug.Log("CHANGED LIQUID STATE");
 
             isAbilityActive = !isAbilityActive;
 
