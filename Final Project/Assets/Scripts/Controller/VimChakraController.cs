@@ -36,12 +36,7 @@ public class VimChakraController : ChakraController
 
     public override void OnCollisionEnter2D(Collision2D col)
     {
-        if(isGroundPounding)
-        {
-            MonoBehaviour.Destroy(col.gameObject);
-        }
 
-        isGroundPounding = false;
     }
 
     public override void FixedUpdate(bool isGrounded)
@@ -62,12 +57,6 @@ public class VimChakraController : ChakraController
         if(Input.GetKeyDown(KeyCode.F))
         {
             isAbilityActive = true;
-        }
-
-        if(Input.GetKeyDown(KeyCode.F) && !isGrounded && !isGroundPounding)
-        {
-            isGroundPounding = true;
-            rigidbody2D.AddForce(new Vector2(0, groundPoundForce));
         }
     }
 
