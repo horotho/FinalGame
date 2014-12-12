@@ -65,6 +65,7 @@ public class ScreenFade : MonoBehaviour
 
         if(controller != null) controller.movementAllowed = true;
         Destroy(Instance.gameObject);
+
     }
 
     //The Unity event that we tap into to show the fade texture

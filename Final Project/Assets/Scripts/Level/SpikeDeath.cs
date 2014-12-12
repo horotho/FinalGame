@@ -4,10 +4,12 @@ using System.Collections;
 public class SpikeDeath : MonoBehaviour {
 
 	public GameObject player;
+	private AudioClip clip;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start () 
+	{
+		clip = Resources.Load<AudioClip>("squish");
 	}
 	
 	// Update is called once per frame
@@ -17,9 +19,10 @@ public class SpikeDeath : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D col){
 		if (col.gameObject.tag == "Player") {
+			AudioSource.PlayClipAtPoint(clip, gameObject.transform.position);
 			//Application.LoadLevel(Application.loadedLevel);
 			Controller c = col.gameObject.GetComponent<Controller>();
-			ScreenFade.Instance.Fade(Application.loadedLevel, 0.1f, c);
+			ScreenFade.Instance.Fade(Application.loadedLevel, 0.2f, c);
 		}
 	}
 }
