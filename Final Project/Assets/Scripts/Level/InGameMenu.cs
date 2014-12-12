@@ -52,6 +52,11 @@ public class InGameMenu : MonoBehaviour
         }
     }
 
+	public void HideTutorial()
+	{
+		tutorial.SetActive(false);
+	}
+
     void OnLevelWasLoaded(int level)
     {
         tutorial.SetActive(true);
