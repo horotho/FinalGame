@@ -11,6 +11,7 @@ public class FluxChakraController : ChakraController
     private GameObject waterPrefab;
     private GameObject[] prefabs;
 	private AudioSource source;
+	private bool space;
 
     private Gradient g;
     private GradientColorKey[] gck;
@@ -57,6 +58,9 @@ public class FluxChakraController : ChakraController
 
     public override void FixedUpdate(bool isGrounded)
     {
+		Debug.DrawLine(gameObject.transform.position, gameObject.transform.position + 0.5f * Vector3.up);
+		space = Physics2D.OverlapCircle(gameObject.transform.position, 0.5f);
+		Debug.Log(space);
     }
 
     public override void Update(bool isGrounded)
@@ -71,7 +75,8 @@ public class FluxChakraController : ChakraController
 
     public override void Ability(bool isGrounded)
     {
-        if(Input.GetKeyDown(KeyCode.F) && isGrounded)
+
+		if(Input.GetKeyDown(KeyCode.F) && isGrounded)
         {
             //Debug.Log("CHANGED LIQUID STATE");
 

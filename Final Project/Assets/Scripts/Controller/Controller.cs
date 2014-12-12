@@ -55,7 +55,7 @@ public class Controller : MonoBehaviour
     void FixedUpdate()
     {
         float move = Input.GetAxis("Horizontal");
-        grounded = Physics2D.OverlapCircle(ground.transform.position, 0.4f, mask);
+        grounded = Physics2D.OverlapCircle(ground.transform.position, 0.25f, mask);
 
 		if(movementAllowed)
 		{
@@ -74,12 +74,13 @@ public class Controller : MonoBehaviour
         	
         anim.SetBool("Grounded", grounded);
         currentController.FixedUpdate(grounded);
+
     }
 
     void Update()
     {
+		currentController.Ability(grounded);
         currentController.Update(grounded);
-        currentController.Ability(grounded);
 
         if(Mathf.Abs(transform.position.y - originalPosition.y) > 100)
             transform.position = originalPosition;
