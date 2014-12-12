@@ -68,6 +68,8 @@ public class Controller : MonoBehaviour
 			
 			anim.SetFloat("Speed", Mathf.Abs(Input.GetAxis("Horizontal")));
 			anim.SetFloat("vSpeed", rigidbody2D.velocity.y);
+
+			currentController.isMoving = (rigidbody2D.velocity.y != 0) && move != 0;
 		}
         	
         anim.SetBool("Grounded", grounded);

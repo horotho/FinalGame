@@ -10,6 +10,7 @@ public class FluxChakraController : ChakraController
     private float originalRadius;
     private GameObject waterPrefab;
     private GameObject[] prefabs;
+	private AudioSource source;
 
     private Gradient g;
     private GradientColorKey[] gck;
@@ -43,6 +44,10 @@ public class FluxChakraController : ChakraController
         gak[1].time = 3.0f;
 
         g.SetKeys(gck, gak);
+
+		source = gameObject.AddComponent<AudioSource>();
+		source.clip = Resources.Load<AudioClip>("water");
+		source.volume = 0.2f;
     
     }
 
@@ -52,7 +57,6 @@ public class FluxChakraController : ChakraController
 
     public override void FixedUpdate(bool isGrounded)
     {
-
     }
 
     public override void Update(bool isGrounded)
@@ -61,6 +65,8 @@ public class FluxChakraController : ChakraController
             rigidbody2D.AddForce(new Vector2(0, jumpForce));
 
         spriteRenderer.color = g.Evaluate(3 * Mathf.Cos(Time.time) * Mathf.Cos(Time.time));
+
+		if(isMoving && isAbilityActive && !source.isPlaying) source.Play();
     }
 
     public override void Ability(bool isGrounded)
@@ -90,6 +96,7 @@ public class FluxChakraController : ChakraController
                 circleCollider2D.radius = 0.05f;
                 spriteRenderer.sprite = null;
                 animator.enabled = false;
+				source.Play();
             }
             else
             {
@@ -119,6 +126,7 @@ public class FluxChakraController : ChakraController
         circleCollider2D.radius = originalRadius;
         spriteRenderer.sprite = originalSprite;
         animator.enabled = true;
+		isAbilityActive = false;
     }
 
 }

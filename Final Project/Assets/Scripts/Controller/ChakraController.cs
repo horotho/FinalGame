@@ -14,6 +14,7 @@ public abstract class ChakraController
     public ParticleSystem particleSystem;
     public bool isAbilityActive;
 	public bool isActivated;
+	public bool isMoving;
 
     protected ChakraController(GameObject gameObject)
     {
@@ -27,6 +28,7 @@ public abstract class ChakraController
 
         isActivated = false;
         isAbilityActive = false;
+		isMoving = false;
     }
 
     public abstract void OnCollisionEnter2D(Collision2D col);
