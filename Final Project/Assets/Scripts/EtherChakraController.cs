@@ -3,9 +3,9 @@ using System.Collections;
 
 public class EtherChakraController : ChakraController
 {
-    private float jumpForce = 15f;
+    private float jumpForce = 22.5f;
     private GameObject prefabParticle, instParticle;
-    private bool isAirborne, canJump;
+    private bool isAirborne;
 
     public EtherChakraController(GameObject gm)
         : base(gm)
@@ -13,16 +13,19 @@ public class EtherChakraController : ChakraController
         prefabParticle = Resources.Load<GameObject>("Prefabs/etherParticle");
         instParticle = (GameObject) MonoBehaviour.Instantiate(prefabParticle, gameObject.transform.position, Quaternion.identity);
         instParticle.particleSystem.Stop();
-        canJump = true;
         isAirborne = false;
     }
 
-    public override void Jump(bool isGrounded)
-    {
-        if(Input.GetKey(KeyCode.Space) && canJump)
-            rigidbody2D.AddForce(new Vector2(0, jumpForce));
 
-        canJump = !canJump;
+    public override void FixedUpdate(bool isGrounded)
+    {
+        if(Input.GetKey(KeyCode.Space))
+            rigidbody2D.AddForce(new Vector2(0, jumpForce));
+    }
+
+    public override void Update(bool isGrounded)
+    {
+
     }
 
     public override void Ability(bool isGrounded)

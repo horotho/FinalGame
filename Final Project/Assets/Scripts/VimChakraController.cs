@@ -10,7 +10,12 @@ public class VimChakraController : ChakraController
     {
     }
 
-    public override void Jump(bool isGrounded)
+    public override void FixedUpdate(bool isGrounded)
+    {
+
+    }
+
+    public override void Update(bool isGrounded)
     {
         if(isGrounded && Input.GetKeyDown(KeyCode.Space))
             rigidbody2D.AddForce(new Vector2(0, jumpForce));

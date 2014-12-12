@@ -29,7 +29,9 @@ public abstract class ChakraController
         isAbilityActive = false;
     }
 
-    public abstract void Jump(bool isGrounded);
+    public abstract void FixedUpdate(bool isGrounded);
+
+    public abstract void Update(bool isGrounded);
 
     public abstract void Ability(bool isGrounded);
 

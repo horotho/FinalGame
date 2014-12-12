@@ -71,11 +71,12 @@ public class Controller : MonoBehaviour
 		}
         	
         anim.SetBool("Grounded", grounded);
+        currentController.FixedUpdate(grounded);
     }
 
     void Update()
     {
-        currentController.Jump(grounded);
+        currentController.Update(grounded);
         currentController.Ability(grounded);
 
         if(Mathf.Abs(transform.position.y - originalPosition.y) > 100)
