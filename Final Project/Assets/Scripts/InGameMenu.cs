@@ -4,21 +4,29 @@ using UnityEngine.UI;
 
 public class InGameMenu : MonoBehaviour
 {
-    public GameObject textGameObject;
+    public GameObject menu, tutorial, textGameObject, tutorialTextGameObject;
     public Image flux, vim, ether;
     public Image one, two, three;
-    public GameObject menu;
+
+    private Text tutorialText;
     private bool isMenuActive;
     private GameObject player;
     private Controller playerController;
+
+	void Awake()
+	{
+		tutorialText = tutorialTextGameObject.GetComponent<Text>();
+	}
 
     // Use this for initialization
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerController = player.GetComponent<Controller>();
+
         Text text = textGameObject.GetComponent<Text>();
         text.text = "Level " + (Application.loadedLevel - 1);
+       
         menu.SetActive(false);
         isMenuActive = false;
     }
@@ -41,17 +49,41 @@ public class InGameMenu : MonoBehaviour
                 menu.SetActive(false);
             }
         }
+    }
 
-
-        if(isMenuActive)
+    void OnLevelWasLoaded(int level)
+    {
+        switch(level)
         {
-            for(int i = 0; i < 3; i++)
-            {
-                if(playerController.IsChakraAbilityActive(i))
-                {
+            // Ether
+            case 3:
+                tutorial.SetActive(true);
+                tutorialText.text = "Pickup the Ether element by moving over it. Select Ether by pressing 1. Hold down space bar to float!";
+                break;
+            // Flux
+            case 4:
+                tutorial.SetActive(true);
+                tutorialText.text = "Pickup the Flux element by moving over it. Select Flux by pressing 2. Use F to turn into water and slide down the gap!";
+                break;
+            // Vim
+            case 5:
+                tutorial.SetActive(true);
+                tutorialText.text = "Pickup the Vim element by moving over it. Select Vim by pressing 3. Use F to spawn a ladder!";
+                break;
 
-                }
-            }
+            case 7:
+                tutorial.SetActive(true);
+                tutorialText.text = "Beware the spikes!";
+                break;
+
+            case 9:
+                tutorial.SetActive(true);
+                tutorialText.text = "Beware the water!";
+                break;
+
+            default:
+                tutorial.SetActive(false);
+                break;
         }
     }
 
