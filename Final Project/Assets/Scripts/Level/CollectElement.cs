@@ -19,10 +19,16 @@ public class CollectElement : MonoBehaviour
         // Check if Player collides with the element.
         if(col.gameObject.tag == "Player")
         {
+			// Deactivate collider to prevent multiple trigger enters/
+			this.gameObject.collider2D.enabled = false;
+
+			// Play audio clip.
+			audio.Play();
+
             col.gameObject.BroadcastMessage("SetControllerActive", GetIndexFromTag(gameObject.tag));
             menu.SetIndicatorActive(gameObject.tag);
 
-            Debug.Log("Collected " + this.gameObject.name);
+            //Debug.Log("Collected " + this.gameObject.name);
 
             // Start the coroutine that Plays() and Stops() the particle system.
             StartCoroutine(CollectionEmitter());

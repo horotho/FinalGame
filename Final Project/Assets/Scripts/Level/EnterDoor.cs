@@ -22,7 +22,7 @@ public class EnterDoor : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            Debug.Log("Entered Door");
+            //Debug.Log("Entered Door");
             //Application.LoadLevel("Level " + level);
 			//ScreenFade.Instance.Fade(level, 1, col.gameObject.GetComponent<Controller>());
 			Controller c = col.gameObject.GetComponent<Controller>();
